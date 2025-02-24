@@ -1,0 +1,134 @@
+{
+  "advisors": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "custodians": [
+        { "name": "Schwab", "repId": "1001" },
+        { "name": "Vanguard", "repId": "2001" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "custodians": [
+        { "name": "Fidelity", "repId": "1002" },
+        { "name": "Charles Schwab", "repId": "2002" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Emma Davis",
+      "custodians": [
+        { "name": "TD Ameritrade", "repId": "1003" },
+        { "name": "E-Trade", "repId": "2003" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Randall",
+      "custodians": [
+        { "name": "Schwab", "repId": "1271" },
+        { "name": "Fidelity", "repId": "8996" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Samantha Lee",
+      "custodians": [
+        { "name": "Merrill Lynch", "repId": "1004" },
+        { "name": "Morgan Stanley", "repId": "2004" }
+      ]
+    }
+  ],
+  
+  "accounts": [
+    {
+      "name": "Bradley Green - 401k",
+      "number": "21889645",
+      "repId": "9883",
+      "holdings": [
+        { "ticker": "HEMCX", "units": 77, "unitPrice": 398.63 }
+      ],
+      "custodian": "Schwab"
+    },
+    {
+      "name": "Alice Johnson - IRA",
+      "number": "56321874",
+      "repId": "1001",
+      "holdings": [
+        { "ticker": "AAPL", "units": 50, "unitPrice": 175.42 },
+        { "ticker": "GOOGL", "units": 10, "unitPrice": 2803.50 }
+      ],
+      "custodian": "Vanguard"
+    },
+    {
+      "name": "Bob Smith - Roth IRA",
+      "number": "98237192",
+      "repId": "1002",
+      "holdings": [
+        { "ticker": "MSFT", "units": 30, "unitPrice": 327.45 },
+        { "ticker": "TSLA", "units": 15, "unitPrice": 789.25 }
+      ],
+      "custodian": "Fidelity"
+    },
+    {
+      "name": "Emma Davis - 529 Plan",
+      "number": "45678231",
+      "repId": "1003",
+      "holdings": [
+        { "ticker": "AMZN", "units": 20, "unitPrice": 3421.67 }
+      ],
+      "custodian": "TD Ameritrade"
+    },
+    {
+      "name": "Samantha Lee - Brokerage",
+      "number": "77895321",
+      "repId": "1004",
+      "holdings": [
+        { "ticker": "NFLX", "units": 12, "unitPrice": 650.75 },
+        { "ticker": "NVDA", "units": 25, "unitPrice": 890.30 }
+      ],
+      "custodian": "Merrill Lynch"
+    }
+  ],
+
+  "securities": [
+    {
+      "id": "2e5012db-3a39-415d-93b4-8b1e3b453c6c",
+      "ticker": "ICKAX",
+      "name": "Delaware Ivy Crossover Credit Fund Class A",
+      "dateAdded": "2001-06-07T11:12:56.205Z"
+    },
+    {
+      "id": "8f9e3c2a-1b45-4d7f-9a20-7b3f2d56a8e5",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "dateAdded": "1980-12-12T09:30:00.000Z"
+    },
+    {
+      "id": "5c2e1f3a-4d98-46f9-bb1a-2d7e1b34a5c7",
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. Class A",
+      "dateAdded": "2004-08-19T13:00:00.000Z"
+    },
+    {
+      "id": "1a4b5c6d-7e8f-9123-a456-789b1c2d3e4f",
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "dateAdded": "1986-03-13T10:00:00.000Z"
+    },
+    {
+      "id": "3b2a1c4d-5e6f-7980-1234-5c6d7e8f9a0b",
+      "ticker": "TSLA",
+      "name": "Tesla Inc.",
+      "dateAdded": "2010-06-29T14:30:00.000Z"
+    },
+    {
+      "id": "9d8c7b6a-5e4f-3210-98ba-7c6d5e4f3a2b",
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc.",
+      "dateAdded": "1997-05-15T11:45:00.000Z"
+    }
+  ]
+}
