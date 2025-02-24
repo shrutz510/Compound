@@ -58,7 +58,7 @@ node server.js
 
 ### 5. Test API with `curl` or Postman
 ```sh
-curl -X GET http://localhost:3001/api/insights/total-value
+curl -X GET http://localhost:3000/api/insights/total-value
 ```
 
 ---
