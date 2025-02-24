@@ -1,2 +1,0 @@
-# Compound
-Advisor Dashboard
