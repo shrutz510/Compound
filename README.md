@@ -35,7 +35,7 @@ JSON-based data seeding for easy testing
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/advisor-dashboard.git
+git clone git@github.com:shrutz510/Compound.git
 cd advisor-dashboard
 ```
 
