@@ -9,7 +9,7 @@ This is the backend service for the Compound Advisor Dashboard, designed to prov
 - [Setup Instructions](#setup-instructions)
 - [API Endpoints](#api-endpoints)
   - [Advisors API](#advisors-api)
-  - [Accounts API](#accounts-api)a
+  - [Accounts API](#accounts-api)
   - [Securities API](#securities-api)
   - [Insights API](#insights-api)
 - [Future Improvements](#future-improvements)
