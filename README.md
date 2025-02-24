@@ -58,11 +58,15 @@ Compound’s business runs on tools that enable financial advisors to provide a 
    - Holdings are derived from the accounts dataset and not stored separately in JSON.
 
 4. Database Initialization  
-   - If the database `compound_dev` does not exist, it is created automatically.  
-   - If tables do not exist, Sequelize initializes them upon startup.  
+   - If the database `compound_dev` does not exist, it is created before starting the program.  
+   - If tables do not exist, Sequelize initializes them upon startup.
+   - It is assumed that an initial Postgres server group exists. 
 
 5. Environment Variables  
-   - The project requires a `.env` file with database connection details.  
+   - The project requires a `.env` file with database connection details.
+
+6. Other
+   - All commannds are given for MAC OS. 
 
 ---
 
