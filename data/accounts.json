@@ -1,0 +1,53 @@
+{
+    "accounts": [
+      {
+        "name": "Bradley Green - 401k",
+        "number": "21889645",
+        "repId": "9883",
+        "holdings": [
+          { "ticker": "HEMCX", "units": 77, "unitPrice": 398.63 }
+        ],
+        "custodian": "Schwab"
+      },
+      {
+        "name": "Alice Johnson - IRA",
+        "number": "56321874",
+        "repId": "1001",
+        "holdings": [
+          { "ticker": "AAPL", "units": 50, "unitPrice": 175.42 },
+          { "ticker": "GOOGL", "units": 10, "unitPrice": 2803.50 }
+        ],
+        "custodian": "Vanguard"
+      },
+      {
+        "name": "Bob Smith - Roth IRA",
+        "number": "98237192",
+        "repId": "1002",
+        "holdings": [
+          { "ticker": "MSFT", "units": 30, "unitPrice": 327.45 },
+          { "ticker": "TSLA", "units": 15, "unitPrice": 789.25 }
+        ],
+        "custodian": "Fidelity"
+      },
+      {
+        "name": "Emma Davis - 529 Plan",
+        "number": "45678231",
+        "repId": "1003",
+        "holdings": [
+          { "ticker": "AMZN", "units": 20, "unitPrice": 3421.67 }
+        ],
+        "custodian": "TD Ameritrade"
+      },
+      {
+        "name": "Samantha Lee - Brokerage",
+        "number": "77895321",
+        "repId": "1004",
+        "holdings": [
+          { "ticker": "NFLX", "units": 12, "unitPrice": 650.75 },
+          { "ticker": "NVDA", "units": 25, "unitPrice": 890.30 }
+        ],
+        "custodian": "Merrill Lynch"
+      }
+    ]
+  }
+  

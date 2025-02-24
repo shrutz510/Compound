@@ -1,0 +1,40 @@
+{
+  "securities": [
+    {
+      "id": "2e5012db-3a39-415d-93b4-8b1e3b453c6c",
+      "ticker": "ICKAX",
+      "name": "Delaware Ivy Crossover Credit Fund Class A",
+      "dateAdded": "2001-06-07T11:12:56.205Z"
+    },
+    {
+      "id": "8f9e3c2a-1b45-4d7f-9a20-7b3f2d56a8e5",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "dateAdded": "1980-12-12T09:30:00.000Z"
+    },
+    {
+      "id": "5c2e1f3a-4d98-46f9-bb1a-2d7e1b34a5c7",
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. Class A",
+      "dateAdded": "2004-08-19T13:00:00.000Z"
+    },
+    {
+      "id": "1a4b5c6d-7e8f-9123-a456-789b1c2d3e4f",
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "dateAdded": "1986-03-13T10:00:00.000Z"
+    },
+    {
+      "id": "3b2a1c4d-5e6f-7980-1234-5c6d7e8f9a0b",
+      "ticker": "TSLA",
+      "name": "Tesla Inc.",
+      "dateAdded": "2010-06-29T14:30:00.000Z"
+    },
+    {
+      "id": "9d8c7b6a-5e4f-3210-98ba-7c6d5e4f3a2b",
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc.",
+      "dateAdded": "1997-05-15T11:45:00.000Z"
+    }
+  ]
+}

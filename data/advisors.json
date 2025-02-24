@@ -1,0 +1,44 @@
+{
+  "advisors": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "custodians": [
+        { "name": "Schwab", "repId": "1001" },
+        { "name": "Vanguard", "repId": "2001" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "custodians": [
+        { "name": "Fidelity", "repId": "1002" },
+        { "name": "Charles Schwab", "repId": "2002" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Emma Davis",
+      "custodians": [
+        { "name": "TD Ameritrade", "repId": "1003" },
+        { "name": "E-Trade", "repId": "2003" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Randall",
+      "custodians": [
+        { "name": "Schwab", "repId": "1271" },
+        { "name": "Fidelity", "repId": "8996" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Samantha Lee",
+      "custodians": [
+        { "name": "Merrill Lynch", "repId": "1004" },
+        { "name": "Morgan Stanley", "repId": "2004" }
+      ]
+    }
+  ]
+}

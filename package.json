@@ -1,7 +1,7 @@
 {
   "name": "compound",
   "version": "1.0.0",
-  "main": "advisor.js",
+  "main": "advisors.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.1-securities",
     "pg": "^8.13.3",
     "sequelize": "^6.37.5"
   }

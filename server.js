@@ -2,7 +2,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const fs = require('fs');
-const { sequelize, advisors, accounts, securities, holdings } = require('./models');
+const sequelize = require('./database');
+const { advisors, accounts, securities, holdings } = require('./models'); 
 const apiRoutes = require('./api');
 
 dotenv.config();
@@ -15,17 +16,25 @@ app.use(express.json());
 // Use API routes
 app.use('/api', apiRoutes);
 
-// Load Data from JSON
+// Load Data from JSON and insert into database
 const loadData = async () => {
     try {
-        const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-        await sequelize.sync({ force: true });
+        const advisorsData = JSON.parse(fs.readFileSync('./data/advisors.json', 'utf8')).advisors;
+        const accountsData = JSON.parse(fs.readFileSync('./data/accounts.json', 'utf8')).accounts;
+        const securitiesData = JSON.parse(fs.readFileSync('./data/securities.json', 'utf8')).securities;
 
-        await advisors.bulkCreate(data.advisors);
-        await accounts.bulkCreate(data.accounts);
-        await securities.bulkCreate(data.securities);
+        await sequelize.sync({ force: true }); // Recreate tables
 
-        const holdingsData = data.accounts.flatMap(acc =>
+        if (!advisors || !accounts || !securities || !holdings) {
+            throw new Error("One or more models are undefined. Check models/index.js.");
+        }
+
+        await advisors.bulkCreate(advisorsData);
+        await accounts.bulkCreate(accountsData);
+        await securities.bulkCreate(securitiesData);
+
+        // Process holdings from accounts data
+        const holdingsData = accountsData.flatMap(acc =>
             acc.holdings.map(h => ({
                 accountId: acc.repId,
                 ticker: h.ticker,
@@ -33,17 +42,23 @@ const loadData = async () => {
                 unitPrice: h.unitPrice,
             }))
         );
-
         await holdings.bulkCreate(holdingsData);
         console.log("Data inserted successfully!");
-    } catch (error) {
+    } 
+    catch (error) {
         console.error("Error inserting data:", error);
     }
 };
 
 // Initialize database and start server
-sequelize.sync({ force: true }).then(() => {
-    console.log("Database & tables recreated!");
-    loadData();
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-});
+(async () => {
+    try {
+        await sequelize.authenticate();
+        console.log("Database connected successfully.");
+        await loadData();
+        app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    } 
+    catch (error) {
+        console.error("Server initialization error:", error);
+    }
+})();
