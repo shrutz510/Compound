@@ -36,7 +36,7 @@ JSON-based data seeding for easy testing
 ### 1. Clone the Repository
 ```sh
 git clone git@github.com:shrutz510/Compound.git
-cd advisor-dashboard
+cd Compound
 ```
 
 ### 2. Install Dependencies
