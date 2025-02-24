@@ -8,10 +8,10 @@ This is the backend service for the Compound Advisor Dashboard, designed to prov
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [API Endpoints](#api-endpoints)
-  - [Advisors API](#advisors-api)
-  - [Accounts API](#accounts-api)
-  - [Securities API](#securities-api)
-  - [Insights API](#insights-api)
+  - [Advisors API]
+  - [Accounts API]
+  - [Securities API]
+  - [Insights API]
 - [Future Improvements](#future-improvements)
 
 ---
