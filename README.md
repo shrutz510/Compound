@@ -1,4 +1,4 @@
-### Compound Advisors Dashboard - Backend
+### Compound Advisors Dashboard - Backend (Option A)
 Compound’s business runs on tools that enable financial advisors to provide a structured experience for their clients. Financial advisors can be part of an organizational group, which we refer to as a firm. This project aggregates client account information for the advisory firm, providing insights into the underlying accounts, investments, and advisor performance.
 
 ---
