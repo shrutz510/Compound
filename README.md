@@ -48,7 +48,7 @@ npm install
 Create a `.env` file in the root directory and configure:
 ```
 PORT=3000
-DATABASE_URL=your_database_connection_url
+DB_URI=postgres://postgres:compound@localhost:5432/advisor_db
 ```
 
 ### 4. Run the Server
