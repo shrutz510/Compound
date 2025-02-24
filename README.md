@@ -92,6 +92,7 @@ brew services start postgresql
 Ensure PostgreSQL is running:  
 ```sh
 psql -U postgres
+\q
 ```
 
 ---
